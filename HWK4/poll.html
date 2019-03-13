@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="./poll.css">
+   <title>Campus Visit Survey</title>
+</head>
+<body>
+ <h1>Campus Visit Survey</h1>
+
+   <form action="_" method="GET">
+      <table class="survey" style="width:100%">
+         <tr>
+            <th class="survey"><label for="first">First name:</label></th>
+            <td class="survey"><input type="text" id="first" name="first" style="float:left" maxlength="100"></td>
+         </tr>
+         <tr>
+            <th class="survey"><label for="last">Last name:</label></th>
+            <td class="survey"><input type="text" id="last" name="last" style="float:left" maxlength="100"></td>
+         </tr>
+         <tr>
+            <th class="survey"><label for="address">Address:</label></th>
+            <td class="survey"><textarea id="address" name="address" rows="1" cols="70" style="float:left" maxlength="200"></textarea></td>
+         </tr>
+         <tr>
+            <th class="survey"><label for="email">Email Address:</label></th>
+            <td class="survey"><input type="email"  id="email" name="email" style="float:left" maxlength="200"></td>
+         </tr>
+         <tr>
+            <th class="survey"><label>What do you like the most?</label><br></th>
+            <td class="survey"><input type="checkbox" name="liked most" value="students"> students<br>
+               <input type="checkbox" name="liked most" value="campus"> campus<br>
+               <input type="checkbox" name="liked most" value="courses offered"> courses offered<br>
+               <input type="checkbox" name="liked most" value="dorm rooms"> dorm rooms<br>
+               <input type="checkbox" name="liked most" value="sports"> sports<br>
+               <input type="checkbox" name="liked most" value="location"> location
+            </td>
+         </tr>
+         <tr> <th class="survey"><label>How did you get interested in us?</label></th>
+         <td class="survey"><input type="radio" name="interested" value="family"> family<br>
+            <input type="radio" name="interested" value="friends"> friends<br>
+            <input type="radio" name="interested" value="television"> television<br>
+            <input type="radio" name="interested" value="Internet"> Internet<br>
+            <input type="radio" name="interested" value="other"> other<br>
+         </tr>
+         <tr>
+            <th class="survey"><label for="comments">Comments:</label></th>
+            <td class="survey"><textarea id="comments" name="comments" rows="5" cols="70" style="float:left" maxlength="200"></textarea></td>
+         </tr>
+         <tr><th class="survey"><label>What department did you visit?</label></th>
+         <td class="survey">
+            <select name="sport">
+               <option value="football">Business</option>
+               <option value="baseball">Earth, Energy & Environmental Sciences</option>
+               <option value="basketball">Education</option>
+               <option value="hockey">Engineering</option>
+               <option value="soccer">Humanities & Sciences</option>
+               <option value="soccer">Law</option>
+        </select>
+       </td>
+      </tr>
+
+
+      </table>
+      <br/>
+      <br/>
+      <br/>
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+   </form>
+</body>
+</html>

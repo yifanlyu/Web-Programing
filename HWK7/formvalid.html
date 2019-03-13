@@ -1,0 +1,38 @@
+<?xml version = "1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+<title> Form Validation </title>
+<script type ="text/javascript" src = "./validate.js"></script>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<form id = "textForm" method = "post"
+ action = "http://www.cknuckles.com/cgi/echo.cgi"
+ onsubmit = "return validate();" >
+ <h3>New User Registration</h3>
+<table border = "0">
+<tr>
+<td> Name * </td>
+<td> <input type = "text" name = "userName" /></td>
+</tr>
+<tr>
+<td> Password * </td>
+<td> <input type = "password" name = "password" /></td>
+</tr>
+<tr>
+<td> Re-enter Password *</td>
+<td> <input type = "password" name = "password1" /></td>
+</tr>
+<tr>
+<td> <input type = "submit" value = "Enter" /></td>
+<td> <input type = "reset" value = "Clear" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

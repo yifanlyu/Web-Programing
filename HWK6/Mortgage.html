@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns = "http://www.w3.org/1999/xhtml" lang='en'>
+    <head>
+        <title> Mortgage Calculator </title>
+        <link rel="stylesheet" href="./Morgage.css">
+    </head>
+    <body>
+        <div class="block">
+            <h3> Mortgage Calculator </h3>
+            <form id = "Mortgage" method = "post" >
+                <table>
+                    <tr>
+                        <td> Principal amount </td>
+                        <td>
+                            <input type = "text" name = "p" size = "20" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Yearly percentage interest rate </td>
+                        <td>
+                            <input type = "text" name = "r" size = "20" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Loan term in months </td>
+                        <td>
+                            <input type = "text" name = "n" size = "20" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type = "button" name = "Calculate" value = "Calculate" />
+                        </td>
+                        <td>
+                            <input type = "reset" value = "Clear" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Monthly payments </td>
+                        <td>
+                            <input type = "text" name = "mp" size = "20" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Sum of all payments </td>
+                        <td>
+                            <input type = "text" name = "sum" size = "20" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> Total interest paid </td>
+                        <td>
+                            <input type = "text" name = "ti" value = "" size = "20" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <script>
+            document.getElementById("Mortgage").Calculate.onclick = run;
+
+            function run(){
+                if (validate()) {
+                    Mortgagecal();
+                }
+            }
+
+            function Mortgagecal ()
+            {
+             var mp = "";
+             var sum = "";
+             var ti = "";
+             var elt = document.getElementById("Mortgage");
+             var p = parseFloat (elt.p.value);
+             var r = parseFloat ((elt.r.value)/12)/100;
+             var n = Math.round(parseFloat (elt.n.value));
+             mp = p*r/(1-(1/Math.pow((1+r),n)));
+             elt.mp.value = parseFloat(mp).toFixed(2);
+             sum=mp*n;
+             elt.sum.value = parseFloat(sum).toFixed(2);
+             ti=sum-p;
+             elt.ti.value = parseFloat(ti).toFixed(2);
+            }
+
+
+            function validate ()
+            {
+              var elt = document.getElementById("Mortgage");
+              if (parseFloat(elt.p.value) < 0)
+              {
+                window.alert ("Principal amount cannot be negative");
+                return false;
+
+              }
+              if (parseFloat(elt.r.value) < 0)
+              {
+                window.alert ("Interest rate amount cannot be negative");
+                return false;
+              }
+              if (parseFloat(elt.n.value) < 0)
+              {
+                window.alert ("Loan term in months cannot be negative");
+                return false;
+              }
+              if (!/^\d+[.]?\d*$/.test(parseFloat(elt.n.value)))
+              {
+                window.alert ("Loan term in months can only be number");
+                return false;
+              }
+
+              if (!/^\d+[.]?\d*$/.test(parseFloat(elt.r.value)))
+              {
+                window.alert ("Interest rate amount can only be number");
+                return false;
+              }
+
+              if (!/^\d*[.]?\d*$/.test(parseFloat(elt.p.value)))
+              {
+                window.alert ("Principal amount can only be number");
+                return false;
+              }
+
+              return true;
+            }
+        </script>
+    </body>
+</html>
