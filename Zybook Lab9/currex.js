@@ -188,3 +188,8 @@ var exchangeRates = {
 };
 
 /* Your solution goes here */
+
+$(document).ready(function(){
+    $("#toCurrency").append('<option value="allCurrencies" disabled selected>Select currency</option>')
+}
+)
