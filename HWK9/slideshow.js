@@ -1,6 +1,5 @@
 var currentSlide = 1;
 var lastexectime =0;
-var d = new Date();
 var cur = 0;
 'use strict';
 
@@ -18,42 +17,39 @@ $(function() {
 
     var interval;
 
-    var d = new Date();
-    cur=d.getTime();
-    if (cur-lastexectime>animationSpeed*1.5) {
-        function startSlider() {
-            interval = setInterval(function() {
-                var d = new Date();
-                lastexectime=d.getTime();
-                $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-                    ++currentSlide;
-                    if (currentSlide === $slides.length) {
-                        currentSlide = 1;
-                        $slideContainer.css('margin-left', 0);
-                    }
-                });
-            }, pause);
-        }
+    function startSlider() {
+        interval = setInterval(function() {
+            var d = new Date();
+            lastexectime=d.getTime();
+            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+                ++currentSlide;
+                if (currentSlide === $slides.length) {
+                    currentSlide = 1;
+                    $slideContainer.css('margin-left', 0);
+                }
+            });
+        }, pause);
     }
+
 
     function pauseSlider() {
         clearInterval(interval);
     }
 
-    $slideContainer
-    .on('mouseenter', pauseSlider)
-    .on('mouseleave', startSlider);
-
     function handleVisibilityChange() {
         if (document.visibilityState == "hidden") {
         pauseSlider();
-        } else {
+        }
+    }
+
+    handleVisibilityChange();
+
+    var d = new Date();
+    cur=d.getTime();
+
+    if (cur-lastexectime>animationSpeed*2) {
         startSlider();
     }
-    }
-
-    startSlider();
-
 });
 
 
