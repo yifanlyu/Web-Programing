@@ -1,0 +1,48 @@
+.backimg {
+    z-index: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+
+.img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.img-continer{
+    z-index: 1;
+    margin: 0px;
+
+}
+
+.line1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+.line2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+.line3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+.puzzlepiece {
+    z-index: 1;
+    margin: 0px;
+    padding: 0px;
+}
