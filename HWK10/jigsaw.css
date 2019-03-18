@@ -1,3 +1,4 @@
+
 .backimg {
     z-index: 0;
     display: block;
@@ -16,8 +17,12 @@
 
 .img-continer{
     z-index: 1;
-    margin: 0px;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 400px;
+    height: 300px;
 }
 
 .line1{
@@ -25,24 +30,34 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-
+    width: 400px;
+    height: 100px;
 }
-.line2{
+.line1{
     display: block;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    width: 400px;
+    height: 100px;
 
 }
-.line3{
+.line1{
     display: block;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    width: 400px;
+    height: 100px;
 
 }
+
+
 .puzzlepiece {
-    z-index: 1;
-    margin: 0px;
-    padding: 0px;
+    position: absolute;
+    /* z-index: 1;
+    margin: -3px;
+    padding: 2px;
+    width: 24%;
+    height: 30%; */
 }

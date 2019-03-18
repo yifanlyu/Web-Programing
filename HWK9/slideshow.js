@@ -1,4 +1,4 @@
-var currentSlide = 1;
+evar currentSlide = 1;
 var lastexectime =0;
 var cur = 0;
 'use strict';
