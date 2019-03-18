@@ -1,10 +1,48 @@
+// Create two list of indices
+var imgarray = ["1","2","3"]
+var slicearray = ["1","2","3","4","5","6","7","8","9","10","11","12"]
 
-
+// Function to generate random number
 function getRandomArbitrary(n) {
     return Math.floor(Math.random() * (n));
 }
 
 
+// function to shuffle array
+
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+var imgnum=imgarray[getRandomArbitrary(3)];
+var slicenum=shuffle(slicearray).pop();
+$( ".line1" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line1" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line1" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line1" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line2" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line2" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line2" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line2" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line3" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line3" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line3" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+var slicenum=shuffle(slicearray).pop();
+$( ".line3" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 
 
 /*
@@ -55,7 +93,9 @@ function mover(event) {
 // Compute the new position, add the units, and move the word
 
   theElement.style.left = Math.round((event.clientX - diffX)/100)*100 + "px";
-  theElement.style.top = Math.round((event.clientY- diffY)/100)*100 + "px";
+  if (Math.round((event.clientY- diffY)/100)*100>=0) {
+      theElement.style.top = Math.round((event.clientY- diffY)/100)*100 + "px";
+  }
 
 // Prevent propagation of the event
 
