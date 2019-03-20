@@ -1,3 +1,10 @@
+header{
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+    font-size: 30pt;
+
+}
+
 
 .backimg {
     z-index: 0;
@@ -62,4 +69,28 @@
     padding: 2px;
     width: 24%;
     height: 30%; */
+}
+
+
+.timmer-box{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#timer{
+    font-size: 20pt;
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    font-size: 15pt;
+    background-color:  #6699ff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
 }
