@@ -120,46 +120,7 @@ function dropper(event) {
 }  //** end of dropper
 
 
-// *******************************************************
-// function to verify all positions of the puzzle pieces
-// function Done() {
-//     var right = true
-//     var posX = parseInt(theElement.style.left);
-//     var posY = parseInt(theElement.style.top);
-//     for (var i = 0; i < 12.length; i++) {
-//         theElement=document.getElementById(i)
-//         var posX = parseInt(theElement.style.left);
-//         var posY = parseInt(theElement.style.top);
-//         if (i==1 | posX=0 | posY=0) {
-//             continue
-//         }else if (i==2 | posX==100 | posY==0) {
-//             continue
-//         }else if (i==3 | posX==200 | posY==0) {
-//             continue
-//         }else if (i==4 | posX==300 | posY==0) {
-//             continue
-//         }else if (i==5 | posX==0 | posY==100) {
-//             continue
-//         }else if (i==6 | posX==100 | posY==100) {
-//             continue
-//         }else if (i==7 | posX==200 | posY==100) {
-//             continue
-//         }else if (i==8 | posX==300 | posY==100) {
-//             continue
-//         }else if (i==9 | posX==0 | posY==200) {
-//             continue
-//         }else if (i==10 | posX==100 | posY==200) {
-//             continue
-//         }else if (i==11 | posX==200 | posY==200) {
-//             continue
-//         }else if (i==12 | posX==300 | posY==200) {
-//             continue
-//         }
-//         else {
-//             right=false
-//         }
-//     }
-// }
+
 
 // *******************************************************
 // function of the timer
@@ -193,3 +154,31 @@ var timer = setInterval(function(){
 // This only represents time between renders. Actual time rendered is based
 // on the elapsed time calculated above.
 }, 250);
+
+
+// *******************************************************
+// function to verify all positions of the puzzle pieces
+function Done() {
+    // var right = true
+    // for (var k = 1; k < 13; k++) {
+    //     theElement1=document.getElementById(k.toString())
+    //     var posX1 = parseInt(theElement1.style.left);
+    //     var posY1 = parseInt(theElement1.style.top);
+    //     if (k==1 && posX1=0 &&	posY1=0) {
+    //     }else if (k==2 && posX1==100 &&	posY1==0) {
+    //     }else if (k==3 && posX1==200 && posY1==0) {
+    //     }else if (k==4 && posX1==300 && posY1==0) {
+    //     }else if (k=5 && posX1==0 && posY1==100) {
+    //     }else if (k==6 && posX1==100 && posY1==100) {
+    //     }else if (k==7 && posX1==200 && posY1==100) {
+    //     }else if (k==8 && posX1==300 && posY1==100) {
+    //     }else if (k==9 && posX1==0 && posY1==200) {
+    //     }else if (k==10 && posX1==100 && posY1==200) {
+    //     }else if (k==11 && posX1==200 && posY1==200) {
+    //     }else if (k==12 && posX1==300 && posY1==200) {
+    //     }
+    //     else {
+    //         right=false
+    //     }
+    // }
+}
