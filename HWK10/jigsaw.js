@@ -21,29 +21,29 @@ function shuffle(a) {
 // function to generte image
 var imgnum=imgarray[getRandomArbitrary(3)];
 var slicenum=shuffle(slicearray).pop();
-$( ".line1" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line1" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line1" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line1" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line2" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line2" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line2" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line2" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line3" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line3" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line3" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line3" ).append('<img id='+imgnum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 
 // *******************************************************
 
@@ -95,7 +95,7 @@ function mover(event) {
 // Compute the new position, add the units, and move the word
 
   theElement.style.left = Math.round((event.clientX - diffX)/100)*100 + "px";
-  if (Math.round((event.clientY- diffY)/100)*100>=0) {
+  if (Math.round((event.clientY- diffY)/100)*100>=0 && Math.round((event.clientY- diffY)/100)*100<=600) {
       theElement.style.top = Math.round((event.clientY- diffY)/100)*100 + "px";
   }
 
@@ -124,6 +124,10 @@ function dropper(event) {
 
 // *******************************************************
 // function of the timer
+
+var hours=0;
+var minutes=0;
+var seconds=0;
 
 // get cuurent time and define variables
 var startTime = Date.now();
@@ -159,26 +163,31 @@ var timer = setInterval(function(){
 // *******************************************************
 // function to verify all positions of the puzzle pieces
 function Done() {
-    // var right = true
-    // for (var k = 1; k < 13; k++) {
-    //     theElement1=document.getElementById(k.toString())
-    //     var posX1 = parseInt(theElement1.style.left);
-    //     var posY1 = parseInt(theElement1.style.top);
-    //     if (k==1 && posX1=0 &&	posY1=0) {
-    //     }else if (k==2 && posX1==100 &&	posY1==0) {
-    //     }else if (k==3 && posX1==200 && posY1==0) {
-    //     }else if (k==4 && posX1==300 && posY1==0) {
-    //     }else if (k=5 && posX1==0 && posY1==100) {
-    //     }else if (k==6 && posX1==100 && posY1==100) {
-    //     }else if (k==7 && posX1==200 && posY1==100) {
-    //     }else if (k==8 && posX1==300 && posY1==100) {
-    //     }else if (k==9 && posX1==0 && posY1==200) {
-    //     }else if (k==10 && posX1==100 && posY1==200) {
-    //     }else if (k==11 && posX1==200 && posY1==200) {
-    //     }else if (k==12 && posX1==300 && posY1==200) {
-    //     }
-    //     else {
-    //         right=false
-    //     }
-    // }
+    for (var k = 1; k < 13; k++) {
+        right=true;
+        theElement1=document.getElementById(k);
+        var posX1 = parseInt(theElement1.style.left);
+        var posY1 = parseInt(theElement1.style.top);
+
+        if (k==1 && posX1==0 && posY1==0) {
+        } else if (k==2 && posX1==100 &&posY1==0) {
+        } else if (k==3 && posX1==200 && posY1==0) {
+        } else if (k==4 && posX1==300 && posY1==0) {
+        } else if (k==5 && posX1==0 && posY1==100) {
+        } else if (k==6 && posX1==100 && posY1==100) {
+        } else if (k==7 && posX1==200 && posY1==100) {
+        } else if (k==8 && posX1==300 && posY1==100) {
+        } else if (k==9 && posX1==0 && posY1==200) {
+        } else if (k==10 && posX1==100 && posY1==200) {
+        } else if (k==11 && posX1==200 && posY1==200) {
+        } else if (k==12 && posX1==300 && posY1==200) {
+        } else {
+            right=false;
+        }
+    }
+    if (right==false) {
+        window.alert("wrong");
+    } else {
+        window.alert("right time:"+hours + ':' + minutes + ':' + seconds);
+    }
 }
