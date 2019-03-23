@@ -185,9 +185,15 @@ function Done() {
             right=false;
         }
     }
+    
+    var container = document.getElementById('finished');
+
     if (right==false) {
-        window.alert("Better luck next time ");
+        // window.alert("Better luck next time ");
+        container.innerHTML = "Better luck next time ";
     } else {
-        window.alert("Congratulations! You got it. Right time:"+hours + ':' + minutes + ':' + seconds);
+        // window.alert("Congratulations! You got it. Right time:"+hours + ':' + minutes + ':' + seconds);
+        container.innerHTML = 'Congratulations! You got it. Check your time above.'
     }
+
 }

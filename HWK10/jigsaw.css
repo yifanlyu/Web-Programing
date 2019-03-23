@@ -107,3 +107,12 @@ button{
     cursor: pointer;
 
 }
+
+.finished-box{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#finished{
+    font-size: 25px;
+}
