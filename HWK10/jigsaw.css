@@ -9,7 +9,7 @@ body{
 
 header{
     text-align: center;
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 30px 0px;
     font-size: 30pt;
     font-family: fantasy;
     font-weight: 700;
@@ -87,7 +87,7 @@ header{
 
 .timmer-box{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 #timer{

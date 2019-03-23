@@ -186,8 +186,8 @@ function Done() {
         }
     }
     if (right==false) {
-        window.alert("wrong");
+        window.alert("Better luck next time ");
     } else {
-        window.alert("right time:"+hours + ':' + minutes + ':' + seconds);
+        window.alert("Congratulations! You got it. Right time:"+hours + ':' + minutes + ':' + seconds);
     }
 }
