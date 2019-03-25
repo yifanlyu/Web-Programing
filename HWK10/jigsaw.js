@@ -21,29 +21,29 @@ function shuffle(a) {
 // function to generte image
 var imgnum=imgarray[getRandomArbitrary(3)];
 var slicenum=shuffle(slicearray).pop();
-$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 500px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 500px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 500px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 0px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line1" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 500px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 600px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 600px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 600px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 100px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line2" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 600px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 700px; left: 0px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 700px; left: 100px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 700px; left: 200px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 var slicenum=shuffle(slicearray).pop();
-$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 200px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
+$( ".line3" ).append('<img id='+slicenum +' onmousedown = "grabber(event);" style = "position: absolute; top: 700px; left: 300px;" class="puzzlepiece" src="./img/img'+imgnum+'-'+slicenum+'.jpg" alt="" >');
 
 // *******************************************************
 
@@ -185,7 +185,7 @@ function Done() {
             right=false;
         }
     }
-    
+
     var container = document.getElementById('finished');
 
     if (right==false) {
