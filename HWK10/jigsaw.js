@@ -95,7 +95,7 @@ function mover(event) {
 // Compute the new position, add the units, and move the word
 
   theElement.style.left = Math.round((event.clientX - diffX)/100)*100 + "px";
-  if (Math.round((event.clientY- diffY)/100)*100>=0 && Math.round((event.clientY- diffY)/100)*100<=600) {
+  if (Math.round((event.clientY- diffY)/100)*100>=0 && Math.round((event.clientY- diffY)/100)*100<=700) {
       theElement.style.top = Math.round((event.clientY- diffY)/100)*100 + "px";
   }
 
