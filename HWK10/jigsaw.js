@@ -93,14 +93,14 @@ function grabber(event) {
 
 function mover(event) {
 // Compute the new position, add the units, and move the word
-  if (event.clientX - diffX>=0 && event.clientX - diffX<=400 && event.clientY - diffY>=0 && event.clientY - diffY<=300) {
+  if (event.clientX - diffX>-50 && event.clientX - diffX<350 && event.clientY - diffY>-50 && event.clientY - diffY<250) {
     theElement.style.left = Math.round((event.clientX - diffX)/100)*100 + "px";
   } else {
     theElement.style.left = (event.clientX - diffX) + "px";
   }
 
   if (Math.round((event.clientY- diffY)/100)*100>=0 && Math.round((event.clientY- diffY)/100)*100<=700) {
-    if (event.clientX - diffX>=0 && event.clientX - diffX<=400 && event.clientY - diffY>=0 && event.clientY - diffY<=300) {
+    if (event.clientX - diffX>-50 && event.clientX - diffX<350 && event.clientY - diffY>-50 && event.clientY - diffY<250) {
         theElement.style.top = Math.round((event.clientY- diffY)/100)*100 + "px";
     }else {
         theElement.style.top = (event.clientY - diffY) + "px";
