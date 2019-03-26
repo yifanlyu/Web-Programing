@@ -84,7 +84,7 @@ header{
 
 .timmer-box{
     position: absolute;
-    left: 1150px;
+    left: 1050px;
     top: 270px;
 }
 
@@ -113,8 +113,8 @@ button{
 
 .finished-box{
     position: relative;
-    top:-65px;
-    left: 300px;
+    top: -270px;
+    left: -450px;
 }
 
 #finished{

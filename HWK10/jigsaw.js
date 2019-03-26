@@ -201,7 +201,7 @@ function Done() {
         container.innerHTML = "Better luck next time ";
     } else {
         // window.alert("Congratulations! You got it. Right time:"+hours + ':' + minutes + ':' + seconds);
-        container.innerHTML = 'Congratulations! You got it. Check your time above.'
+        container.innerHTML = "Congratulations! You got it." + "<br/>" + "Check your time to the right.";
     }
 
 }
