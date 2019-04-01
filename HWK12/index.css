@@ -1,0 +1,122 @@
+body{
+    background-color: #e6f5ff;
+}
+
+header{
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    font-size: 30pt;
+    font-family: fantasy;
+    font-weight: 700;
+    letter-spacing: 1pt;
+}
+/* entire container, keeps perspective */
+.flip-container{
+    /*perspective*/
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 120px;
+    height: 120px;
+    z-index : 1;
+    float:left;
+    -webkit-perspective:1200;
+       -moz-perspective:1200;
+        -ms-perspective:1200;
+         -o-perspective:1200;
+            perspective:1200;
+}
+
+
+/* flip the pane when hovered */
+.flipper.flipped {
+/*transform*/
+    -webkit-transform:rotateY(180deg);
+       -moz-transform:rotateY(180deg);
+        -ms-transform:rotateY(180deg);
+         -o-transform:rotateY(180deg);
+            transform:rotateY(180deg);
+}
+
+img{
+    width: 120px;
+    height: 120px;
+}
+
+.flip-container, .front, .back{
+width:120px;
+height:120px;
+}
+
+/* flip speed goes here */
+.flipper {
+/*transition*/
+    -webkit-transition:0.6s;
+       -moz-transition:0.6s;
+         -o-transition:0.6s;
+            transition:0.6s;
+/*transform-style*/
+    -webkit-transform-style:preserve-3d;
+       -moz-transform-style:preserve-3d;
+        -ms-transform-style:preserve-3d;
+         -o-transform-style:preserve-3d;
+            transform-style:preserve-3d;
+
+}
+
+.flipper:active{
+    transform: scale(0.94);
+}
+
+
+/* hide back of pane during swap */
+.front, .back{
+/*backface-visibility*/
+    -webkit-backface-visibility:hidden;
+       -moz-backface-visibility:hidden;
+        -ms-backface-visibility:hidden;
+         -o-backface-visibility:hidden;
+            backface-visibility:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+/* front pane, placed above back */
+.front{
+    background-color: lightgrey;
+    opacity: 10%;
+    z-index:2;
+}
+/* back, initially hidden pane */
+.back{
+/*transform*/
+    background-color: blue;
+    -webkit-transform:rotateY(180deg);
+       -moz-transform:rotateY(180deg);
+        -ms-transform:rotateY(180deg);
+         -o-transform:rotateY(180deg);
+            transform:rotateY(180deg);
+}
+
+
+.first, .second, .third, .fourth{
+    height: 120px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+#numberoftry{
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 40px;
+}
+
+.timmer-box{
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 40px;
+}

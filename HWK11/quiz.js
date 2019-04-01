@@ -20,7 +20,6 @@ function validate ()
 
   if (elt.q31.checked ==0 && elt.q32.checked ==1 && elt.q33.checked ==0 && elt.q34.checked ==0) {
       right++;
-
   }
 
   if (elt.q41.checked ==0 && elt.q42.checked ==0 && elt.q43.checked ==0 && elt.q44.checked ==1) {
