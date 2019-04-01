@@ -1,5 +1,5 @@
 
-var imgarray = ["crab_nebula","galaxy_1","galaxy_2","galaxy_cluster","jupiter","m31","nebula_1","saturn"];
+var imgarray = ["crab_nebula","galaxy_1","galaxy_2","galaxy_cluster","jupiter","m31","nebula_1","saturn","crab_nebula","galaxy_1","galaxy_2","galaxy_cluster","jupiter","m31","nebula_1","saturn"];
 
 
 // Function to generate random number
@@ -35,10 +35,6 @@ var slicenum=shuffle(imgarray).pop();
 $("#back7").append('<img id='+slicenum+'_a src="./img/'+slicenum+'.jpg">')
 var slicenum=shuffle(imgarray).pop();
 $("#back8").append('<img id='+slicenum+'_a src="./img/'+slicenum+'.jpg">')
-
-
-var imgarray = ["crab_nebula","galaxy_1","galaxy_2","galaxy_cluster","jupiter","m31","nebula_1","saturn"];
-
 var slicenum=shuffle(imgarray).pop();
 $("#back9").append('<img id='+slicenum+'_b src="./img/'+slicenum+'.jpg">')
 var slicenum=shuffle(imgarray).pop();
