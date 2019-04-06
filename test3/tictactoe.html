@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="tictactoe.css">
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <header class="display-4">
+            Tic Tac Toe
+        </header>
+        <table >
+            <tr>
+              <td><button type="button" class="xo" id="bt11"></button></td>
+              <td><button type="button" class="xo" id="bt12"></button></td>
+              <td><button type="button" class="xo" id="bt13"></button></td>
+            </tr>
+            <tr>
+              <td><button type="button" class="xo" id="bt21"></button></td>
+              <td><button type="button" class="xo" id="bt22"></button></td>
+              <td><button type="button" class="xo" id="bt23"></button></td>
+            </tr>
+            <tr>
+              <td><button type="button" class="xo" id="bt31"></button></td>
+              <td><button type="button" class="xo" id="bt32"></button></td>
+              <td><button type="button" class="xo" id="bt33"></button></td>
+            </tr>
+        </table>
+
+        <button type="button" class="btn btn-info" onclick="replay()">replay</button>
+
+        <div class="Scoreboard table-striped">
+            <h3>Scoreboard</h3>
+            <table id="scoretable">
+                <tr>
+                    <th style="height:20px; width:100px">Round</th>
+                    <th style="height:20px; width:100px">Winner</th>
+                </tr>
+            </table>
+        </div>
+
+        <script type="text/javascript" src="tictactoe.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,66 @@
+header{
+    margin-top: 20px;
+    text-align: center;
+}
+
+table{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+table, th, td {
+    text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.btn{
+    width:100px;
+    text-align: center;
+    height: 60px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: block;
+    position: relative;
+}
+
+td{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.x{
+    background-image: url("./img/x.png")
+}
+
+
+.o{
+    background-image: url("./img/o.png")
+}
+
+.Scoreboard{
+    float: right;
+    margin-right: 200px;
+    margin-top: -500px;
+}
+h3{
+    text-align: center;
+}

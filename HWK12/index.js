@@ -1,4 +1,5 @@
 
+
 var imgarray = ["crab_nebula","galaxy_1","galaxy_2","galaxy_cluster","jupiter","m31","nebula_1","saturn","crab_nebula","galaxy_1","galaxy_2","galaxy_cluster","jupiter","m31","nebula_1","saturn"];
 
 
@@ -68,6 +69,9 @@ var second = 1000;
 var minute = second * 60;
 var hour = minute * 60;
 var container = document.getElementById('timer');
+var hours=0
+var minutes=0
+var seconds=0
 
 function stopTimer() {
     clearInterval(timer);
@@ -111,14 +115,14 @@ function flipCard() {
         this.classList.add('flipped');
         if (!clicked) {
             ntry+=1
-            $('#numberoftry').text('Number of try: '+ntry);
+            $('#numberoftry').text('Number of tries: '+ntry);
             clicked=true;
             id1=this;
             threesectime = setTimeout(function(){
                 id1.classList.remove('flipped')
                 clicked=false
             }
-            ,2000
+            ,3000
             )
         } else if (clicked && this!=id1) {
             clearTimeout(threesectime);
@@ -129,7 +133,7 @@ function flipCard() {
             threesectime1 = setTimeout(function(){
                 disable=false
             }
-            ,2000
+            ,1000
             )
         }
 
@@ -138,12 +142,11 @@ function flipCard() {
 
 function checksame(id1,id2){
     if (id1.getElementsByTagName("img")[0].src==id2.getElementsByTagName("img")[0].src) {
-        console.log(id1.getElementsByTagName("img")[0].src,id2.getElementsByTagName("img")[0].src)
         correctarray.push(id1.getElementsByTagName("img")[0].src)
         if (correctarray.length==8) {
             stopTimer()
             setTimeout(function(){
-                window.alert ("Finished! Number of tries: "+ntry);
+                window.alert ("Finished! Number of tries: "+ ntry);
             }
             ,1000
             )
@@ -154,7 +157,7 @@ function checksame(id1,id2){
         id1.classList.remove('flipped')
         id2.classList.remove('flipped')
     }
-    ,2000
+    ,1000
     )
 }
 
