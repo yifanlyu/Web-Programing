@@ -30,11 +30,10 @@ function status($k){
 <html>
 <head>
 <title> Sign-Up Sheet </title>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h3> Sign-Up Sheet </h3>
 <form method = "post" action = "submit.php">
-    <?php print($timearray) ?>
     <table align = "center" width = "50%" border = "2">
         <caption> Sign-Up Sheet </caption>
         <tr><th> Time </th><th> Name </th></tr>
@@ -49,10 +48,7 @@ function status($k){
         <tr><td> 4:00 pm </td><td> <?php echo(status("four")); ?> </td></tr>
         <tr><td> 5:00 pm </td><td> <?php echo(status("five")); ?> </td></tr>
     </table>
-    <input type = "submit" value = "sumbit your timeslot" />
-</form>
-<p>
-</p>
+    <input align = "center"  type = "submit" value = "sumbit your timeslot">
 </form>
 </body>
 </html>

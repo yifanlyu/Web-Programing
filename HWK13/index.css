@@ -1,0 +1,51 @@
+
+
+#container{
+  text-align: center;
+}
+
+table, th, td, tr {
+	border: 1px solid black;
+}
+
+table {
+    margin-top: 30px;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+th {
+	font-size: 20px;
+}
+
+th, td {
+	width:30%;
+	height:30px;
+    text-align: center;
+}
+
+input[type=text] {
+   width: 200px;
+   height:15px;
+}
+
+input[type=submit] {
+    left: 46%;
+    margin: 50 auto;
+    position: relative;
+    text-align: center;
+    height: 60px;
+   width: 200px;
+   background-color: #09f;
+   color: white;
+   padding: 5px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 20px;
+}
+
+input[type=submit]:hover{
+   background-color: #07d;
+}
