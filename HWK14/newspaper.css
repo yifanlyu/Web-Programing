@@ -1,0 +1,549 @@
+body{
+  min-width: 1450px;
+  background-color: #f7f7f7
+}
+
+
+
+div.middle{
+  position: relative;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.middle img{
+  margin-left: auto;
+  margin-right: 0px;
+  display: block;
+  position: relative;
+  width: 450px;
+}
+
+div.topcon{
+  min-width: 1000px;
+  border-bottom: solid 1px lightgrey;
+  margin-bottom: 15px;
+}
+
+
+div.left{
+  position: relative;
+  text-align: left;
+  font-size: 13pt;
+  width: 200px;
+  left: 10px;
+  top: 110px;
+  letter-spacing: 1px;
+}
+
+
+
+
+div.right{
+  position: relative;
+  float: right;
+  right: 10px;
+  top: -55px;
+}
+
+.account{
+    margin-top: -90px;
+    margin-right: 0px;
+    float:right;
+}
+
+.acc{
+    padding-right: 15px;
+}
+
+.weather{
+    float: right;
+}
+
+.weather a{
+  position: relative;
+  height: 46px;
+  text-indent: -9999em;
+  float: right;
+  margin: 3px 0 0 0;
+  width: 20px;
+  display: block;
+}
+
+div.topnav{
+  position: relative;
+  width: auto;
+  display: block;
+  text-align:center;
+  padding-left: 250px;
+  right: auto;
+  padding-bottom: 15px;
+  border-bottom: double 6px grey;
+}
+
+.topnav a{
+  color: black;
+  font-variant: normal;
+  font-size: 15px;
+  font-style: normal;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  text-decoration:none;
+  margin-right: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color:  #595959;
+  letter-spacing: 1px;
+
+}
+.topnav a:hover{
+  border-bottom: solid 3px  #1a75ff;
+  color:  #000000;
+}
+
+div.main{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1500px;
+    height: auto;
+    margin-top:30px;
+}
+
+div.mainleft{
+    float: left;
+    height: 2000px;
+    width: 1040px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border-right: solid 1px  #cccccc;
+}
+
+div.topleft{
+    height: 900px;
+    border-bottom: solid 1px  #cccccc;
+}
+
+.leftcol{
+    width: 510px;
+    position: relative;
+    float: left;
+    height: 340px;
+    border-right: solid 1px #cccccc;
+}
+
+.rightcol{
+    width: 520px;
+    position: relative;
+    float: right;
+    height: 940px;
+}
+
+.leftfirst{
+    padding: 10px;
+    height: 320px;
+    margin-right: 10px;
+}
+
+.leftimg{
+    position: relative;
+    width: 245px;
+    height: 170px;
+    float:left;
+}
+
+.ltitle{
+    position: relative;
+    float:right;
+    width: 230px;
+    height: 170px;
+    letter-spacing: 1px;
+}
+
+.ltitle a{
+    position: relative;
+    font-weight: bold;
+    font-variant: normal;
+    font-style: normal;
+    text-decoration:none;
+    color: black;
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: "PostoniWide","Bodoni 72","Bodoni MT",Didot,"Didot LT STD","Hoefler Text",Garamond,Georgia,serif;
+    float: left;
+    width: 200px;
+}
+
+.lfcontent{
+    position: absolute;
+    top: 200px;
+    width: 500px;
+    height: 140px;
+    font-size: 14pt;
+    margin-right: 10px;
+    padding-top: 5px;
+    line-height: 25px;
+}
+
+.rightfirst{
+    padding: 10px;
+    height: 320px;
+}
+
+.rightimg{
+    position: relative;
+    width: 245px;
+    height: 170px;
+    float:left;
+}
+
+.rtitle{
+    position: relative;
+    float:right;
+    width: 230px;
+    height: 170px;
+    letter-spacing: 1px;
+}
+
+.rtitle a{
+    position: relative;
+    font-weight: bold;
+    font-variant: normal;
+    font-style: normal;
+    text-decoration:none;
+    color: black;
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: "PostoniWide","Bodoni 72","Bodoni MT",Didot,"Didot LT STD","Hoefler Text",Garamond,Georgia,serif;
+    float: left;
+    width: 200px;
+}
+
+.lfcaption{
+    color:   #a6a6a6;
+    font-size: 11pt;
+}
+
+.rtcaption{
+    color:   #a6a6a6;
+    font-size: 11pt;
+}
+
+.rfcontent{
+    position: absolute;
+    top: 200px;
+    width: 500px;
+    height: 140px;
+    font-size: 14pt;
+    margin-right: 10px;
+    padding-top: 5px;
+    line-height: 25px;
+}
+
+.headimagewrap{
+    position: relative;
+    float: left;
+    height: 530px;
+    width: 700px;
+    padding: 10px;
+}
+
+.imgcaption{
+    color:   #a6a6a6;
+}
+
+.headlinetitle{
+    position: relative;
+    float: right;
+    height: 210px;
+    width: 310px;
+    padding-left: 0px;
+}
+
+.headlinecontent{
+    position: relative;
+    float: right;
+    height: 320px;
+    width: 310px;
+}
+
+.headlinecontent ul,li{
+    padding: 0px;
+    line-height: 25px;
+    margin: 10px;
+    padding: 0;
+}
+
+.headline{
+    border-bottom: solid 1px  #cccccc;
+    height: 550px;
+}
+
+
+.headline h1 a{
+    font-weight: bold;
+    font-variant: normal;
+    font-style: normal;
+    text-decoration:none;
+    color: black;
+    font-size: 25pt;
+    font-weight: bold;
+    font-family: "PostoniWide","Bodoni 72","Bodoni MT",Didot,"Didot LT STD","Hoefler Text",Garamond,Georgia,serif;
+}
+
+
+
+div.mainright{
+    float: right;
+    width: 420px;
+    padding-left: 15px;
+}
+
+
+
+h3 span {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 14pt;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    border-bottom: solid 4px grey;
+}
+
+h3 span a{
+    color: black;
+    font-variant: normal;
+    font-style: normal;
+    text-decoration:none;
+}
+
+p.caption {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 12pt;
+    line-height: 23px;
+}
+
+.mainopinion{
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 410px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tradingview-widget-container{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.opsmall{
+    border-bottom: solid 1px lightgrey;
+    height: 100px;
+    width: 400px;
+}
+
+.editor{
+    color: grey;
+    padding-top: 5px;
+    font-size: 13pt;
+    width: 320px;
+}
+
+.Opiniontext{
+    padding-top: 10px;
+    width: 320px;
+    height: 45px;
+}
+
+.Opiniontext a{
+    font-weight: bold;
+    font-variant: normal;
+    font-style: normal;
+    text-decoration:none;
+    color: black;
+    font-size: 15pt;
+    font-family: "PostoniWide","Bodoni 72","Bodoni MT",Didot,"Didot LT STD","Hoefler Text",Garamond,Georgia,serif;
+    letter-spacing: 0.5px;
+
+}
+
+.main a:hover{
+    color:  #3366ff;
+}
+
+.image{
+    position: relative;
+    top: -60px;
+    float: right;
+}
+
+.bottomleft{
+    position: relative;
+    margin-top: 10px;
+    width: 1040px;
+    height: 1000px;
+}
+
+.bottomtop{
+    position: relative;
+    width: 1040px;
+    height: 500px;
+}
+
+
+.bottombottom{
+    position: relative;
+    width: 1040px;
+    height: 500px;
+}
+
+.bleft{
+    position: relative;
+    float: left;
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 325px;
+    height: 480px;
+    background-color: white;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bmiddle{
+    position: absolute;
+    left: 345px;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 325px;
+    height: 480px;
+    background-color: white;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.bright{
+    position: absolute;
+    float: right;
+    left: 690px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 325px;
+    height: 480px;
+    background-color: white;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btitle{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.picture{
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.picture1{
+    margin-left: 97px;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+.btitle a{
+    font-weight: bold;
+    font-variant: normal;
+    font-style: normal;
+    text-decoration:none;
+    color: black;
+    font-size: 18pt;
+    font-family: "FranklinITCProBold","Helvetica Neue Bold","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.bfirst{
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding-left: 10px;
+    border-bottom: solid 1px  #cccccc;
+}
+
+.bfirst a{
+    font-weight: bold;
+    font-variant: normal;
+    font-style: normal;
+    text-decoration:none;
+    color: black;
+    font-size: 15pt;
+    font-family: "PostoniWide","Bodoni 72","Bodoni MT",Didot,"Didot LT STD","Hoefler Text",Garamond,Georgia,serif;
+    letter-spacing: 0.5px;
+}
+
+.bsecond{
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    border-bottom: solid 1px  #cccccc;
+}
+
+.bsecond a{
+    font-weight: bold;
+    font-variant: normal;
+    font-style: normal;
+    text-decoration:none;
+    color: black;
+    font-size: 15pt;
+    font-family: "PostoniWide","Bodoni 72","Bodoni MT",Didot,"Didot LT STD","Hoefler Text",Garamond,Georgia,serif;
+    letter-spacing: 0.5px;
+}
+
+.bthird{
+    height: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+.bthird a{
+    font-weight: bold;
+    font-variant: normal;
+    font-style: normal;
+    text-decoration:none;
+    color: black;
+    font-size: 15pt;
+    font-family: "PostoniWide","Bodoni 72","Bodoni MT",Didot,"Didot LT STD","Hoefler Text",Garamond,Georgia,serif;
+    letter-spacing: 0.5px;
+}
+
+.footer{
+    height: 100px;
+    border-top: solid 1px black;
+    top: 2280px;
+    position: absolute;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+
+.date{
+    font-weight: bold;
+}
+
+iframe{
+    border: none;
+}

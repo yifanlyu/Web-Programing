@@ -3,6 +3,8 @@ body{
   background-color: #f7f7f7
 }
 
+
+
 div.middle{
   position: relative;
   width: 450px;
@@ -46,11 +48,21 @@ div.right{
   top: -55px;
 }
 
+.account{
+    margin-top: -90px;
+    margin-right: 0px;
+    float:right; 
+}
+
+.acc{
+    padding-right: 15px;
+}
+
 .weather a{
   position: relative;
   height: 46px;
   text-indent: -9999em;
-  margin: -46px 0 0 0;
+  margin: 3px 0 0 0;
   width: 20px;
   display: block;
 }
